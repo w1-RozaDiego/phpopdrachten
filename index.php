@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta charset="utf-8"?
-    <link href="hoofdstuk2/stylesheet.css" type="text/css" rel="stylesheet">
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <header>
