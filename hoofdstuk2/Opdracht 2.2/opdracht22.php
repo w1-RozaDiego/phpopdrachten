@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta charset="utf-8"?
+    </head>
+</head>
+<body>
 <?php
 $text1 = "Hallo";
 $text2 = "een makkelijke taal";
@@ -23,3 +33,5 @@ echo "<p>$text1$text11 $text4 $text5 $text15 $text2$text10$text12 $text7$text10 
 <?php
 echo "<p>$text1$text11$text12$text8 $text15 dat $text5 $text3 $text13$text10$text12 $text7$text10 $text14$text9</p>"
 ?>
+</body>
+</html>
