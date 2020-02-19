@@ -11,16 +11,23 @@
 <body>
 <?php
 
-$trafficLightColor = ("green");
+$trafficLightColor = "red";
 $ambulanceComing = false;
 $driveOn = true;
 
-if ($trafficLightColor = ("green") and ! $ambulanceComing and $driveOn)
+if ($trafficLightColor == "green" and !$ambulanceComing)
 {
-    echo "<h2 id='green'>U mag doorrijden.</h2>";
-
+    $driveOn = true;
+}
+else {
+    $driveOn = false;
 }
 
+
+if ($driveOn ==  false)
+{
+    echo "<h2 id='green'>U mag doorrijden.</h2>";
+}
 else
 {
     echo "<h2 id='redorange'>U moet stoppen.</h2>";
@@ -29,7 +36,7 @@ else
 
 
 
-$countryName = "";
+$countryName = "Cyprus";
 $currentAge = 19;
 
 if ($countryName == "Zweden" && $currentAge >= 20 ||
