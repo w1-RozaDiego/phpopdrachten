@@ -29,7 +29,6 @@ else
 
 
 
-
 $countryName = "";
 $currentAge = 19;
 
