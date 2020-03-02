@@ -10,5 +10,3 @@
 <?php
 echo "<header>Dit is mijn header</header>"
 ?>
-</body>
-</html>
