@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Opdracht 3.3 Header</title>
-    <?php include 'includes/header.php'; ?>
-</head>
-<body>
-<!--
+<?php
+/***************
 ASP Gijsbrechts
 PHP Saebu
 Javascript Evers
@@ -18,55 +12,48 @@ Engels Mitrovic-Vejzovic
 Begeleiding Visser
 SQL Wetering
 Rekenen Wetering
--->
+************************/
 
-<?php
-$courseName = "Nederlands";
+$courseName = "PHP";
 $teacherName = "";
 
 switch ($courseName)
 {
-    case ASP:
+    case 'ASP':
         $teacherName = "Gijsbrechts";
         break;
-    case PHP:
+    case  'PHP':
         $teacherName = "Saebu";
         break;
-    case Javascript:
+    case 'Javascript':
         $teacherName = "Evers";
         break;
-    case Burgerschap:
+    case 'Burgerschap':
         $teacherName = "Visser";
         break;
-    case Modelleren:
+    case 'Modelleren':
         $teacherName = "Bijnen";
         break;
-    case Computertekenen:
+    case 'Computertekenen':
         $teacherName = "Berg";
         break;
-    case Nederlands:
+    case 'Nederlands':
         $teacherName = "Ende";
         break;
-    case DigitaleVaardigheden:
+    case 'DigitaleVaardigheden':
         $teacherName = "Pielage";
         break;
-    case Engels:
+    case 'Engels':
         $teacherName = "Mitrovic-Vejzovic";
         break;
-    case Begeleiding:
+    case 'Begeleiding':
         $teacherName = "Visser";
         break;
-    case SQL:
+    case 'SQL':
         $teacherName = "Wetering";
         break;
-    case Rekenen:
+    case 'Rekenen':
         $teacherName = "Wetering";
         break;
 }
 ?>
-
-
-
-<a href="../index.php">Terug</a>
-</body>
-</html>
