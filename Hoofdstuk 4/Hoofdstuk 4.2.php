@@ -5,7 +5,11 @@
     <?php include 'includes/header.php'; ?>
 </head>
 <body>
+<?php include 'script.php'; ?>
 <?php include 'includes/footer.php'; ?>
-<a href="../index.php">Terug</a>
+
+<?php
+    echo "Het vak $courseName word gegeven door $teacherName";
+?>
 </body>
 </html>
