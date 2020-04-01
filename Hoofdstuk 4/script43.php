@@ -1,4 +1,6 @@
 <?php
+
+/*Optellen van 0 naar 19 met string via while loop*/
 $task2 = "Lancering in: ";
 $counter = 19;
 
@@ -11,7 +13,7 @@ while   ($counter > -1)
     }
     $counter--;
 }
-
+/*Optellen van 0 naar 19 met string via for loop*/
 $task3 = "Lancering in: ";
 
 for ($counter = 19; $counter > -1;)
@@ -23,7 +25,7 @@ for ($counter = 19; $counter > -1;)
     }
     $counter--;
 }
-
+/*String plaatsen via while loop in een h1 van 1 tot 6*/
 $task4 = "";
 $counter2 = 1;
 
@@ -34,7 +36,7 @@ while ($counter2 < 7)
 }
 
 $task5 = "";
-
+/*Table aanmaken en vullen via een for loop*/
 for ($counter2 = 1; $counter2 < 11;)
 {
     if ($counter2 == 1)
@@ -50,7 +52,7 @@ for ($counter2 = 1; $counter2 < 11;)
 }
 $task6 = "";
 $YearDate = 2020;
-
+/*Via een while loop gebeurtenissen plaatsen als P */
 while ($YearDate > 1999)
 {
     if ($YearDate == 2020)
@@ -71,19 +73,32 @@ while ($YearDate > 1999)
 
 $task7 = "";
 $YearDate = 2020;
-
+/*Via een while loop alle gebeurtenissen plaatsen als P */
 while ($YearDate > 1999)
 {
+    /* alternatief
+    switch ($YearDate) {
+        case  2020:
+            //code
+            break;
+        case 2018:
+            //
+            break;
+        default:
+            //
+            break;
+    }
+    */
     if ($YearDate == 2020)
     {
         $task7 .= "<p> in ".$YearDate." ben ik 20 en word ik volwassenen</p>";
     }
-    else if ($YearDate == 2019)
+    elseif ($YearDate == 2019)
     {
         $Age = $YearDate - 2000;
         $task7 .= "<p> in ".$YearDate." word ik $Age </p>";
     }
-    else if ($YearDate == 2018)
+    elseif ($YearDate == 2018)
     {
         $task7 .= "<p> in ".$YearDate." ben ik 18 en word ik een adolescent</p>";
     }
