@@ -7,6 +7,7 @@
  */
 
 $opdracht = "Opdracht 4.4";
+/*Ophalen en schrijven van header en script*/
 include '../includes/header.php'; ?>
 
 <body>
@@ -14,6 +15,7 @@ include '../includes/header.php'; ?>
     Week kalender komende week:
 </h1>
 
+<!--Aankomende week tonen met vandaag als start datum-->
 <?php
 $dagNamen = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag", "zondag");
 for ($day = 0; $day <8 ; $day++)
@@ -21,15 +23,16 @@ for ($day = 0; $day <8 ; $day++)
     $datumAlsGetal = strtotime("+$day days");
     echo "<br>";
     echo "Dag ";
-    echo date('w', $datumAlsGetal);
-    echo " is ";
-    echo "$dagNamen[$day] ";
+    $dw = date('w', $datumAlsGetal);
+    echo "$dw is ";
+    echo "$dagNamen[$dw] ";
     echo date('d-m-Y', $datumAlsGetal);
 }
 ?>
 
 <br> <br>
 
+<!--Extra opdracht waarin de week getoont word met vandaag als start datum met strings uit de array over etc. morgen-->
 <?php
 $DagNaam = array("Vandaag","Morgen","Over-Morgen","Over-Over-Morgen","Over-Over-Over-Morgen","Over-Over-Over-Over-Morgen",
     "Over-Over-Over-Over-Over-Morgen", "Over-Over-Over-Over-Over-Over-Morgen");
@@ -39,8 +42,9 @@ for ($day = 0; $day <8 ; $day++)
     $datumAlsGetal = strtotime("+$day days");
     echo "<br>";
     echo "$DagNaam[$day] ";
-    echo " is ";
-    echo "$dagNamen[$day] ";
+    $dw = date('w', $datumAlsGetal);
+    echo "$dw is ";
+    echo "$dagNamen[$dw] ";
     echo date('d-m-Y', $datumAlsGetal);
 }
 
@@ -48,6 +52,7 @@ for ($day = 0; $day <8 ; $day++)
 <br>
 <br>
 <br>
+<!--Ophalen en schrijven van footer-->
 <a href="../index.php">Terug</a>
 <?php include '../Includes/footer.php'; ?>
 </body>
