@@ -48,10 +48,33 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC))
     $aJokes[] = $row;
 }
 
+echo "<br />";
+// Aanmaken table met headers
+echo "<table>
+<tr>
+<th>ID</th>
+<th>Joketext</th>
+<th>Jokeclou</th>
+<th>Jokedate</th>
+</tr>";
+
+// aJokes wegschrijven als grap en voor elke grap de content bekijken
+foreach($aJokes as $grap)
+{
+    // Tonen inhoud van de grappen in de tabel
+    echo "<tr>
+<td>".$grap['id']."</td>
+<td>".$grap['joketext']."</td>
+<td>".$grap['jokeclou']."</td>
+<td>".$grap['jokedate']."</td>
+</tr>";
+}
+
+// Afsluiten table
+echo "</table>";
+
 // Tonen van de inhoud van aJokes
 echo "<pre>";
 var_dump($aJokes);
 echo "</pre>";
-
-foreach($aJokes as $grap) {echo "<br>".$grap['joketext'];}
 ?>
